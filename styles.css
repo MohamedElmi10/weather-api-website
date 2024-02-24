@@ -1,0 +1,48 @@
+#header {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    min-height: 210px;
+    background-color: #D9D9D9;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+#header>* {
+    margin: auto auto;
+    font-family: "Playfair Display";
+}
+
+h1 {
+    color: #3C5B3D;
+    font-size: 45px;
+
+}
+
+#header h5 {
+    margin-top: auto;
+    font-size: 20px;
+}
+
+
+
+#containerForlang {
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#langs {
+    width: 55px;
+    height: 30px;
+}
+
+#langIcon {
+    width: 15px;
+    height: 15px;
+
+
+}

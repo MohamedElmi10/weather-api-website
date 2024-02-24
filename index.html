@@ -5,20 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Wave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div>
+    <div id="header">
         <H1>Weather Wave</H1>
         <h5>Home</h5>
         <h5>About us</h5>
         <h5>Contact</h5>
-        <!--<img src="pictures/Lang.png" alt="">-->
-        <select name="lang" id="langs">
-            <option value="SWE">SWE</option>
-            <option value="ITA">ITA</option>
-            <option value="FRA">FRA</option>
-        </select>
+        <div id="containerForlang">
+            <img src="pictures/Lang.png" alt="" id="langIcon">
+            <select name="lang" id="langs">
+                <option value="SWE">ENG</option>
+                <option value="SWE">SWE</option>
+                <option value="ITA">ITA</option>
+                <option value="FRA">FRA</option>
+            </select>
+        </div>
 
     </div>
 </body>
