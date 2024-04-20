@@ -1,6 +1,14 @@
+body {
+    background-color: #353043;
+    margin: 0px;
+
+
+}
+
 #header,
 #showcaseGeneralInfo,
-#containerForInfo {
+#containerForInfo,
+#containerForDetails {
     border: 2px solid
 }
 
@@ -15,6 +23,16 @@
     left: 0;
     width: 100%;
     **/
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
 }
 
 #header>* {
@@ -52,9 +70,6 @@ h1 {
 
 }
 
-body {
-    background-color: #353043;
-}
 
 #searchbar {
     border: 2px solid;
@@ -63,8 +78,27 @@ body {
     background-color: #ffff;
 }
 
-#searchbarInputField {
+#buttonForSearch {
+    margin-right: 5px;
     border: 0;
+    background-color: white;
+
+}
+
+#buttonForSearch:hover {
+    background-color: #4CAF50;
+    border: 1px solid black;
+    border-radius: 2rem;
+
+}
+
+#searchbarInputField {
+    padding: 10px;
+    border: 0;
+}
+
+#searchbarInputField:active {
+    border: 1px solid black;
 }
 
 #searchbarIcon {
@@ -72,14 +106,21 @@ body {
     height: 15px;
 
 
+
 }
 
 #containerForInfo {
     min-height: 333px;
-    margin: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+
+
 }
 
-#showcaseGeneralInfo {
+#showcaseGeneralInfo,
+#containerForDetails {
     width: 194px;
     height: 293px;
     margin: 20px;
@@ -88,6 +129,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#containerForDetails {
+    min-width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+
 }
 
 #weatherImage {
@@ -99,6 +148,18 @@ body {
 
 
     margin: 10px auto;
+
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
 
 
 }
