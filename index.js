@@ -57,14 +57,14 @@ function handleClick() {
                     <h5> Humidity: ${data.main.humidity}%</h5>
                 </div>
                 <div id="rightSideInfo">
-                    <h5>Wind Speed: ${data.wind.speed} m/s </h5>
-                    <h5>Wind Direction: ${data.wind.deg}° </h5>
+                    <h5>Wind Speed: ${data.wind.speed} m/s</h5>
+                    <h5>Wind Direction: ${data.wind.deg}°</h5>
                     <h5>Wind Gust Speed: ${data.wind.gust} m/s </h5>
                  </div>`;
             document.getElementById("showcaseGeneralInfo").innerHTML=generalInfo;
-            document.getElementById("containerForDetails").innerHTML = detailsHTML;
+            document.getElementById("containerForDetails").innerHTML   = detailsHTML;
         })  
-        .catch(error => console.error('Error:', error));
+        .cch(error => console.error('Error:', error));
 }
 
 button.addEventListener("click",handleClick);
