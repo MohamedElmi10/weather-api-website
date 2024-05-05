@@ -43,11 +43,45 @@ function handleClick() {
             <h2>${data.name}</h2>
                 <h4>${weekday}  ${dayOfTheMonth}  ${monthName} </h4>
                 <h5>${fullHour}</h5>
-                <img src="pictures/Weather icons/cold-weather.png" alt="" id="weatherImage">
+                <img src="${getWeatherIcon(data.weather[0].description)}" alt="" id="weatherImage">
                 <h2>${tempCelcius}°C</h2>
                 <h5>${data.weather[0].description}</h5>
              </div>
             `;
+            function getWeatherIcon(weatherDescription) {
+                switch (weatherDescription) {
+                    case "clear sky":
+                        return "pictures/weatherIcons/clearsky.png";
+                    case "few clouds":
+                        return "pictures/weatherIcons/fewclouds.png";
+                    case "scattered clouds":
+                        return "pictures/weatherIcons/ scatteredclouds.png";
+                    case "broken clouds":
+                    case "overcast clouds":
+                        return "pictures/weatherIcons/brokenclouds.png";
+                    case "shower rain":
+                        return "pictures/weatherIcons/showerrain.png";
+                    case "rain":
+                        return "pictures/weatherIcons/rain.png";
+                    case "thunderstorm":
+                        return "pictures/weatherIcons/thunderstorm.png";
+                    case "snow":
+                        return "pictures/weatherIcons/snow.png";
+                    case "mist":
+                        return "pictures/weatherIcons/mist.png";
+                    case "rain":
+                        return "pictures/weatherIcons/rain.png";
+                    case "rain":
+                        return "pictures/weatherIcons/rain.png";
+                    case "rain":
+                        return "pictures/weatherIcons/rain.png";
+                    case "rain":
+                        return "pictures/weatherIcons/rain.png";
+                    default:
+                        return "pictures/weatherIcons/noimageavailable.jpeg";
+                }
+
+            }
 
 
             const detailsHTML = `
@@ -58,8 +92,8 @@ function handleClick() {
                     <h5> Humidity: ${data.main.humidity}%</h5>
                 </div>
                 <div id="rightSideInfo">
-                    <h5>Wind Speed: ${data.wind.speed} m/s </h5>
-                    <h5>Wind Direction: ${data.wind.deg}° </h5>
+                    <h5>Wind Speed: ${data.wind.speed} m/s</h5>
+                    <h5>Wind Direction: ${data.wind.deg}°</h5>
                     <h5>Wind Gust Speed: ${data.wind.gust} m/s </h5>
                  </div>`;
             document.getElementById("showcaseGeneralInfo").innerHTML = generalInfo;
@@ -67,5 +101,5 @@ function handleClick() {
         })
 
         .catch(error => console.error('Error:', error)); 
-
+}              
 button.addEventListener("click", handleClick);
