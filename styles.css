@@ -44,22 +44,53 @@ body {
 
 #hero {
     height: 100vh;
-    /* Set the height to 100% of the viewport height */
     width: 100%;
-    /* Set the width to 100% to fill the entire width of the viewport */
-    overflow: hidden;
-    /* Hide any content that overflows the hero section */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 #hero img {
     height: 100%;
-    /* Make the image fill the entire height of the hero section */
     width: 100%;
-    /* Make the image fill the entire width of the hero section */
     object-fit: cover;
-    /* Ensure the image covers the entire area of the hero section */
 }
 
+.hero-text {
+    position: absolute;
+    height: 100vh;
+    width: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(121, 147, 98);
+    background-color: ;
+}
+
+.hero-text * {
+    background-color: #000000;
+    border: 3px solid #3C5B3D;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+}
 
 #containerForDetails {
     min-width: 300px;
