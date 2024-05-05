@@ -49,6 +49,7 @@ function handleClick() {
             `;
 
 
+
             const detailsHTML = `
                 <div id="leftSideInfo">
                     <h5>Max Temperature: ${Math.round(data.main.temp_max - 273.15)}°C</h5>
@@ -61,10 +62,10 @@ function handleClick() {
                     <h5>Wind Direction: ${data.wind.deg}°</h5>
                     <h5>Wind Gust Speed: ${data.wind.gust} m/s </h5>
                  </div>`;
-            document.getElementById("showcaseGeneralInfo").innerHTML=generalInfo;
-            document.getElementById("containerForDetails").innerHTML   = detailsHTML;
-        })  
+            document.getElementById("showcaseGeneralInfo").innerHTML = generalInfo;
+            document.getElementById("containerForDetails").innerHTML = detailsHTML;
+        })
         .cch(error => console.error('Error:', error));
 }
 
-button.addEventListener("click",handleClick);
+button.addEventListener("click", handleClick);
