@@ -21,17 +21,6 @@ body {
 
 }
 
-@media screen and (max-width:768px) {
-
-
-    #header h1 {
-        justify-content: center;
-    }
-
-    #header h5 {
-        display: none;
-    }
-}
 
 #showcaseGeneralInfo {
     grid-area: one;
@@ -45,7 +34,6 @@ body {
 #hero {
     height: 100vh;
     width: 100%;
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -62,19 +50,18 @@ body {
 
 .hero-text {
     position: absolute;
-    height: 100vh;
-    width: 100vh;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: rgb(121, 147, 98);
-    background-color: ;
+    color: white;
 }
 
 .hero-text * {
     background-color: #000000;
-    border: 3px solid #3C5B3D;
+    border: 5px solid #3C5B3D;
     border-radius: 2rem;
     padding: 1rem;
 }
@@ -90,6 +77,21 @@ body {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+}
+
+.scroll-down-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url("pictures/downArrow/downArrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+
 }
 
 #containerForDetails {
@@ -116,10 +118,16 @@ footer {
 
 }
 
+
+
 @media screen and (max-width:768px) {
     footer {
         flex-direction: column;
         align-items: center;
+    }
+
+    #header h5 {
+        display: none;
     }
 
 
@@ -135,7 +143,32 @@ footer {
         order: 3;
     }
 
+    #hero {
+        text-align: center;
+        height: auto;
+        width: auto;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 2px;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        display: none;
+    }
+
+    .scroll-down-arrow {
+        display: none;
+    }
 }
+
+
 
 #header,
 #showcaseGeneralInfo,
@@ -238,8 +271,11 @@ select {
 }
 
 #buttonForSearch:hover {
-    background-color: rgb(71, 71, 110);
-    filter: grayscale(0%) brightness(200%);
+    background-color: #3C5B3D;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
     transition: color 0.3s ease;
 
 
@@ -248,9 +284,10 @@ select {
 
 #searchbarInputField {
     padding: 10px;
-    border: 0;
+    border: 1px solid transparent;
     width: 200px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 #searchbarInputField:active {
