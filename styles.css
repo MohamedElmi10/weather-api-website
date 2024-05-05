@@ -35,15 +35,35 @@ body {
 
 #showcaseGeneralInfo {
     grid-area: one;
-
+    min-width: 300px;
     margin: 10px auto;
+    min-height: 500px;
+    justify-content: center;
 
+}
 
+#hero {
+    height: 100vh;
+    /* Set the height to 100% of the viewport height */
+    width: 100%;
+    /* Set the width to 100% to fill the entire width of the viewport */
+    overflow: hidden;
+    /* Hide any content that overflows the hero section */
+}
+
+#hero img {
+    height: 100%;
+    /* Make the image fill the entire height of the hero section */
+    width: 100%;
+    /* Make the image fill the entire width of the hero section */
+    object-fit: cover;
+    /* Ensure the image covers the entire area of the hero section */
 }
 
 
 #containerForDetails {
-    width: 500px;
+    min-width: 300px;
+    min-height: 500px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -117,6 +137,7 @@ select {
     height: 30px;
     background-color: white;
 }
+
 
 #mainContent {
     display: flex;
