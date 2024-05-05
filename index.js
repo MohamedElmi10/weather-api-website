@@ -36,6 +36,7 @@ function handleClick() {
             });
             console.log(date);
             console.log(fullHour);
+            document.getElementById("containerForInfo").style.display = "flex"
 
             const tempCelcius = Math.round(data.main.temp - 273.15);
             const generalInfo = `
@@ -43,11 +44,10 @@ function handleClick() {
                 <h4>${weekday}  ${dayOfTheMonth}  ${monthName} </h4>
                 <h5>${fullHour}</h5>
                 <img src="pictures/Weather icons/cold-weather.png" alt="" id="weatherImage">
-                <h2>${tempCelcius}</h2>
+                <h2>${tempCelcius}°C</h2>
                 <h5>${data.weather[0].description}</h5>
              </div>
             `;
-
 
 
             const detailsHTML = `
@@ -58,14 +58,14 @@ function handleClick() {
                     <h5> Humidity: ${data.main.humidity}%</h5>
                 </div>
                 <div id="rightSideInfo">
-                    <h5>Wind Speed: ${data.wind.speed} m/s</h5>
-                    <h5>Wind Direction: ${data.wind.deg}°</h5>
+                    <h5>Wind Speed: ${data.wind.speed} m/s </h5>
+                    <h5>Wind Direction: ${data.wind.deg}° </h5>
                     <h5>Wind Gust Speed: ${data.wind.gust} m/s </h5>
                  </div>`;
             document.getElementById("showcaseGeneralInfo").innerHTML = generalInfo;
             document.getElementById("containerForDetails").innerHTML = detailsHTML;
         })
-        .cch(error => console.error('Error:', error));
-}
+
+        .catch(error => console.error('Error:', error)); 
 
 button.addEventListener("click", handleClick);
