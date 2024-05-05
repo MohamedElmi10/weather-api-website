@@ -49,6 +49,7 @@ function handleClick() {
              </div>
             `;
 
+
             const detailsHTML = `
                 <div id="leftSideInfo">
                     <h5>Max Temperature: ${Math.round(data.main.temp_max - 273.15)}°C</h5>
@@ -64,7 +65,7 @@ function handleClick() {
             document.getElementById("showcaseGeneralInfo").innerHTML = generalInfo;
             document.getElementById("containerForDetails").innerHTML = detailsHTML;
         })
-        .catch(error => console.error('Error:', error)); // Added catch block
-}
+
+        .catch(error => console.error('Error:', error)); 
 
 button.addEventListener("click", handleClick);
