@@ -1,0 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 40px;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+input[type="password"],
+#comment,
+label {
+    width: 100%;
+    padding: 10px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    font-family: "Playfair Display";
+    color: #3C5B3D;
+
+}
+
+input[type="submit"] {
+    background-color: #3755eb;
+    color: aliceblue;
+}
+
+label {
+    left: 0;
+}
+
+select {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
