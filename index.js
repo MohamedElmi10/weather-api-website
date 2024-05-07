@@ -16,13 +16,19 @@ console.log(monthName);
 const button = document.getElementById("buttonForSearch");
 
 function handleClick() {
+    document.getElementById("containerForInfo").style.display = "none"
+    document.getElementById("alertWarning").style.display = "none"
     const city = document.getElementById("searchbarInputField").value;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
     fetch(apiUrl)
         .then(response => {
+            if (response.status === 404) {
+                const alertContainer = document.getElementById("alertWarning")
+                alertContainer.style.display = "block"
+            }
             if (!response.ok) {
-                throw new Error("Response was not ok");
+                throw new Error("An error occurred. Please try again later.");
             }
             return response.json();
         })
@@ -100,6 +106,6 @@ function handleClick() {
             document.getElementById("containerForDetails").innerHTML = detailsHTML;
         })
 
-        .catch(error => console.error('Error:', error)); 
-}              
+        .catch(error => console.error('Error:', error));
+};
 button.addEventListener("click", handleClick);
