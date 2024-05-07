@@ -271,7 +271,7 @@ select {
 }
 
 #buttonForSearch:hover {
-    background-color: #3C5B3D;
+    background-color: #7B8D7C;
     border: none;
     padding: 5px;
     cursor: pointer;
@@ -328,4 +328,13 @@ select {
     margin: 10px auto;
 
 
+}
+
+#alertWarning {
+    border: 1px solid #FFE69C;
+    border-radius: 7px;
+    background-color: #FFF3CD;
+    color: #6B5209;
+    padding: 20px;
+    font-size: larger;
 }
