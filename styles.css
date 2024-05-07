@@ -126,7 +126,7 @@ footer {
         align-items: center;
     }
 
-    #header h5 {
+    #header a {
         display: none;
     }
 
@@ -168,7 +168,30 @@ footer {
     }
 }
 
+#header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    margin-top: auto;
+    font-size: 25px;
+    font-weight: 700;
+}
 
+.linksInHeader:hover {
+    background-color: rgb(151, 176, 144);
+    color: blue;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.linksInHeader:active {
+    text-decoration: underline;
+
+
+
+
+}
 
 #header,
 #showcaseGeneralInfo,
@@ -230,10 +253,7 @@ select {
 
 }
 
-#header h5 {
-    margin-top: auto;
-    font-size: 20px;
-}
+
 
 
 
