@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Wave</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contant.css">
+
+</head>
+
+<body>
+
+
+    <!-- Header-->
+    <div id="header">
+        <a href="index.html">
+            <h1 id="headerText">Weather Wave</h1>
+        </a>
+        <a href="contact.html" class="linksInHeader">Home</a>
+        <a href="#" class="linksInHeader">About us</a>
+        <a href="contact.html" class="linksInHeader">Contact</a>
+        <div id="containerForlang">
+            <img src="pictures/LangIcon/Lang.png" alt="" id="langIcon">
+            <select name="lang" id="langs">
+                <option value="SWE">ENG</option>
+                <option value="SWE">SWE</option>
+                <option value="ITA">ITA</option>
+                <option value="FRA">FRA</option>
+            </select>
+        </div>
+
+    </div>
+    <!-- Contact form-->
+    <div id="container">
+        <form action="" method="post">
+            <h1>Get in touch</h1>
+            <label for="firstname">Firstname:</label><br>
+            <input type="text" name="firstname" id="firstname" required><br><br>
+            <label for="lastname">Lastname:</label><br>
+            <input type="text" name="lastname" id="lastname" required><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" required><br><br>
+            <label for="gender">Gender:</label><br>
+            <div id="radio-buttons">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br><br>
+            </div>
+            <label for="country">Country of residence:</label><br>
+            <select id="country">
+                <option Value="SWE">Sweden</option>
+                <option Value="GB">Great Britian</option>
+
+                <option Value="FR">France</option>
+                <option Value="NOR">Norway</option>
+                <option Value="US">United States</option>
+                <option Value="NOR">Norway</option>
+            </select><br><br>
+            <label for="comment">What can we help you with?</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Any thoughts..."></textarea> <br><br>
+            <input type="checkbox" id="newsletter" name="newsletter" value="true">
+            <label for="newsletter">Do you want to subscribe to our newsletter?</label><br>
+            <input type="checkbox" id="terms" name="terms" value="true" required>
+            <label for="terms">Do you accept our <a href="conditions.html" target="_blank">terms and
+                    conditions?</a></label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- footer-->
+    <footer>
+        <div id="contact">
+            <h2>Contact</h2>
+            <h4>Email: info@weatherwave.com</h4>
+            <h4>Telefon: +1 555-123-4567</h4>
+
+
+        </div>
+        <div id="partnership">
+            <h2>In partnership with:</h2>
+            <img src="pictures/Collaboration/Google logo.png" alt="">
+            <img src="pictures/Collaboration/LG logo 1.png" alt="">
+        </div>
+        <div id="socialMedia">
+            <h2>Follow us on:</h2>
+            <img src="pictures/SocialMedia/youtube icon.png" alt="">
+            <img src="pictures/SocialMedia/facebook icon.png" alt="">
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
