@@ -1,0 +1,18 @@
+#tnc {
+    width: 700px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    background-color: aliceblue;
+    height: 100vh;
+    margin: 50px auto;
+
+}
+
+.termsInfo {
+    font-size: larger;
+    font-family: "Playfair Display";
+
+    width: 100%;
+
+}
