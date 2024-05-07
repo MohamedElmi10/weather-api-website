@@ -8,6 +8,106 @@ body {
 
 }
 
+footer {
+    background-color: #140E0E;
+    color: white;
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    min-width: 100%;
+    margin-top: auto;
+
+
+}
+
+#header>* {
+    margin: auto auto;
+    font-family: "Playfair Display";
+}
+
+#headerText {
+    color: #3C5B3D;
+    font-size: 45px;
+
+}
+
+
+
+
+
+#containerForlang {
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+#langs {
+    width: 55px;
+    height: 30px;
+}
+
+#langIcon {
+    width: 15px;
+    height: 15px;
+}
+
+#header a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+    margin-top: auto;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.linksInHeader:hover {
+    background-color: rgb(151, 176, 144);
+    color: blue;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.linksInHeader:active {
+    text-decoration: underline;
+
+
+
+
+}
+
+#showcaseGeneralInfo,
+#containerForInfo,
+#containerForDetails {
+    border: 2px solid
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    min-height: 150px;
+    background-color: #D9D9D9;
+    /**  position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    **/
+}
+
+select {
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    background-color: white;
+}
+
 #containerForInfo {
     min-height: 333px;
     margin: 50px;
@@ -104,19 +204,7 @@ body {
 
 }
 
-footer {
-    background-color: #140E0E;
-    color: white;
-    display: flex;
 
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 20px;
-    min-width: 100%;
-    margin-top: auto;
-
-
-}
 
 
 
@@ -126,7 +214,7 @@ footer {
         align-items: center;
     }
 
-    #header a {
+    .linksInHeader {
         display: none;
     }
 
@@ -168,62 +256,6 @@ footer {
     }
 }
 
-#header a {
-    text-decoration: none;
-    padding: 10px;
-    color: #000000;
-    margin-top: auto;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.linksInHeader:hover {
-    background-color: rgb(151, 176, 144);
-    color: blue;
-    border-radius: 5px;
-    padding: 10px;
-
-}
-
-.linksInHeader:active {
-    text-decoration: underline;
-
-
-
-
-}
-
-#header,
-#showcaseGeneralInfo,
-#containerForInfo,
-#containerForDetails {
-    border: 2px solid
-}
-
-#header {
-    display: flex;
-    flex-direction: row;
-    min-height: 150px;
-    background-color: #D9D9D9;
-    /**  position: fixed;
-    margin-top: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    **/
-}
-
-select {
-    padding: 5px;
-    font-size: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    appearance: none;
-    text-align: center;
-    width: 200px;
-    height: 30px;
-    background-color: white;
-}
 
 
 #mainContent {
@@ -240,38 +272,6 @@ select {
 
 #containerForInfo h2 {
     color: #3C5B3D;
-}
-
-#header>* {
-    margin: auto auto;
-    font-family: "Playfair Display";
-}
-
-#headerText {
-    color: #3C5B3D;
-    font-size: 45px;
-
-}
-
-
-
-
-
-#containerForlang {
-    margin-top: 2%;
-    margin-right: 2%;
-}
-
-#langs {
-    width: 55px;
-    height: 30px;
-}
-
-#langIcon {
-    width: 15px;
-    height: 15px;
-
-
 }
 
 
