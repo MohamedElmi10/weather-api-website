@@ -2,7 +2,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 100px;
@@ -11,7 +11,7 @@
 
 #aboutUsText {
     position: absolute;
-    top: 20%;
+    top: 25%;
     border-radius: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
     width: 85%;
@@ -20,5 +20,6 @@
     padding: 5px;
     line-height: 45px;
     color: antiquewhite;
+    height: fit-content;
 
 }
