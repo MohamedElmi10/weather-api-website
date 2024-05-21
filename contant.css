@@ -5,7 +5,7 @@ body {
 #container {
     display: flex;
     justify-content: center;
-    height: fit-content;
+    height: 100%;
     padding: 40px;
 
 }
@@ -33,4 +33,9 @@ input[type="submit"] {
 
 label {
     left: 0;
+}
+
+select {
+    font-size: 8px;
+    font-family: "Playfair Display";
 }

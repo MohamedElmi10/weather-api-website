@@ -2,7 +2,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 40%;
+    top: 3500%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 100px;
@@ -22,4 +22,50 @@
     color: antiquewhite;
     height: fit-content;
 
+}
+
+#langs {
+    font-family: arial;
+    font-size: 10px;
+}
+
+@media screen and (max-width:768px) {
+    #aboutUsTitle {
+        font-size: 36px;
+        top: 60%;
+    }
+
+    #aboutUsText {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 20px;
+    }
+
+    #langs {
+
+        width: 40px;
+        padding: 5px;
+    }
+
+    #langIcon {
+        display: none;
+    }
+
+    footer {
+        padding: 30px;
+
+        font-size: 10px;
+    }
+
+    #contact,
+    #partnership,
+    #socialMedia {
+        padding: 20px;
+    }
+}
+
+.bar {
+    padding: 2px;
+    margin: 2px;
+    width: 100%;
 }

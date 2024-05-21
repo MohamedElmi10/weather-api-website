@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Wave</title>
-    <link rel="stylesheet" href="styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -17,22 +19,33 @@
 
 
 
-    <div id="header">
-        <a href="index.html">
-            <h1 id="headerText">Weather Wave</h1>
-        </a>
-        <a href="index.html" class="linksInHeader">Home</a>
+    <div class="header">
+
+        <h1 class="headerText">Weather Wave</h1>
+
+        <a href="index.html" class="linksInHeader" id="homeLink">Home</a>
         <a href="aboutUs.html" class="linksInHeader">About us</a>
         <a href="contact.html" class="linksInHeader">Contact</a>
-        <div id="containerForlang">
-            <img src="pictures/LangIcon/Lang.png" alt="" id="langIcon">
-            <select name="lang" id="langs">
-                <option value="ENG">ENG</option>
-                <option value="SWE">SWE</option>
-                <option value="ITA">ITA</option>
-                <option value="FRA">FRA</option>
-            </select>
+
+
+        <div class="dropdown">
+            <div class="hamburger-menu" onclick="toggleDropdown()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="dropdown-content" id="myDropdown">
+
+                <a href="index.html" class="linksIndDropDown">Home</a>
+                <a href="aboutUs.html" class="linksIndDropDown">About us</a>
+                <a href="contact.html" class="linksIndDropDown">Contact</a>
+            </div>
         </div>
+    </div>
+    </div>
+
+
+
 
     </div>
     <div class="hero">
@@ -47,6 +60,7 @@
         </div>
         <a href="#mainContent" class="scroll-down-arrow">Scroll down</a>
     </div>
+
     <div id="mainContent">
         <div id="searchbar">
             <input type="text" id="searchbarInputField" placeholder="Enter a city or a country">
@@ -89,6 +103,8 @@
         </footer>
 
         <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 </body>
 
 </html>
