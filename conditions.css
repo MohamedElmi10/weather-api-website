@@ -1,10 +1,10 @@
 #tnc {
-    width: 100vh;
+    width: fit-content;
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 2rem;
     background-color: aliceblue;
-    height: 100vh;
+    height: fit-content;
     margin: 50px auto;
 
 }
