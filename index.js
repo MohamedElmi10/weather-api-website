@@ -109,3 +109,16 @@ function handleClick() {
         .catch(error => console.error('Error:', error));
 };
 button.addEventListener("click", handleClick);
+
+
+document.getElementById("toggleNav").addEventListener("click", handleCollapse)
+
+function toggleDropdown() {
+    var dropdown = document.getElementsByClassName("dropdown-content")[0];
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+
+}

@@ -18,24 +18,34 @@
 
 
     <!-- Header-->
-    <div id="header">
-        <a href="index.html">
-            <h1 id="headerText">Weather Wave</h1>
-        </a>
-        <a href="index.html" class="linksInHeader">Home</a>
+
+    <div class="header">
+
+        <h1 class="headerText">Weather Wave</h1>
+
+        <a href="index.html" class="linksInHeader" id="homeLink">Home</a>
         <a href="aboutUs.html" class="linksInHeader">About us</a>
         <a href="contact.html" class="linksInHeader">Contact</a>
-        <div id="containerForlang">
-            <img src="pictures/LangIcon/Lang.png" alt="" id="langIcon">
-            <select name="lang" id="langs">
-                <option value="ENG">ENG</option>
-                <option value="SWE">SWE</option>
-                <option value="ITA">ITA</option>
-                <option value="FRA">FRA</option>
-            </select>
-        </div>
 
+
+        <div class="dropdown">
+            <div class="hamburger-menu" onclick="toggleDropdown()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="dropdown-content" id="myDropdown">
+
+                <a href="index.html" class="linksIndDropDown">Home</a>
+                <a href="aboutUs.html" class="linksIndDropDown">About us</a>
+                <a href="contact.html" class="linksIndDropDown">Contact</a>
+            </div>
+        </div>
     </div>
+    </div>
+
+
+
     <!-- Contact form-->
     <div id="container">
         <form action="" method="post">
@@ -72,7 +82,7 @@
             <input type="checkbox" id="newsletter" name="newsletter" value="true">
             <label for="newsletter">Do you want to subscribe to our newsletter?</label><br>
             <input type="checkbox" id="terms" name="terms" value="true" required>
-            <label for="terms">Do you accept our <a href="conditions.html" target="_blank">terms and
+            <label for="terms">Do you accept our <a href="conditions.html">terms and
                     conditions?</a></label><br>
             <input type="submit" value="Submit">
         </form>
