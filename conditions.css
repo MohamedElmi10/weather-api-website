@@ -1,5 +1,5 @@
 #tnc {
-    width: fit-content;
+    width: 100vh;
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 2rem;
