@@ -1,5 +1,5 @@
 #tnc {
-    width: 700px;
+    width: fit-content;
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 2rem;
@@ -13,6 +13,6 @@
     font-size: larger;
     font-family: "Playfair Display";
 
-    width: 100%;
+    width: fit-content;
 
 }
