@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #1E1E1E;
     margin: 0px;
     min-height: 100vh;
     box-sizing: border-box;
@@ -92,7 +92,7 @@ footer {
 }
 
 .hero {
-    height: 100vh;
+
     width: 100%;
     position: relative;
     display: flex;
@@ -111,7 +111,7 @@ footer {
 .hero-text {
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -138,6 +138,7 @@ footer {
     margin-bottom: 20px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     background-color: #000000;
+
 }
 
 .scroll-down-arrow {
@@ -186,8 +187,10 @@ footer {
     border: 2px solid;
     width: fit-content;
     padding: 20px;
-    margin: 20px auto;
+
     background-color: #ffff;
+    margin-top: 600px;
+    margin-bottom: 200px
 }
 
 #buttonForSearch {
@@ -376,11 +379,17 @@ footer {
     .hamburger-menu {
         display: none;
     }
+
+
 }
 
 @media screen and (max-width: 1198px) {
     #homeLink {
         display: none;
+    }
+
+    #searchbar {
+        margin-top: 800px;
     }
 }
 
@@ -514,6 +523,11 @@ footer {
     #titleLink {
         display: none;
     }
+
+    .hero {
+        height: 20vh;
+    }
+
 
 
 }
