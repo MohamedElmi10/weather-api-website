@@ -41,7 +41,7 @@ footer {
     font-size: 25px;
     font-weight: 700;
     margin: auto;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .linksIndDropDown:hover {
@@ -189,8 +189,8 @@ footer {
     padding: 20px;
 
     background-color: #ffff;
-    margin-top: 600px;
-    margin-bottom: 200px
+    margin-top: 550px;
+    margin-bottom: 210px
 }
 
 #buttonForSearch {
@@ -244,6 +244,7 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+
 }
 
 
@@ -343,10 +344,13 @@ footer {
     font-size: 45px;
     position: absolute;
     left: 2%;
-    top: 0;
+    top: 35px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 0;
+    border: 5px solid black;
+    border-radius: 2px;
+    padding: 2px;
 }
 
 
@@ -380,16 +384,27 @@ footer {
         display: none;
     }
 
+    .hero {
+        height: fit-content;
+
+    }
+
+    #myDropdown {
+        width: 100%;
+    }
+
 
 }
 
-@media screen and (max-width: 1198px) {
+
+@media screen and (max-width: 1305px) {
     #homeLink {
         display: none;
     }
 
     #searchbar {
         margin-top: 800px;
+        margin-bottom: 100px;
     }
 }
 
@@ -397,6 +412,10 @@ footer {
     footer {
         flex-direction: column;
         align-items: center;
+    }
+
+    #searchbar {
+        margin-top: 100px;
     }
 
     #partnership {
@@ -424,12 +443,16 @@ footer {
 
     .hero-text h1 {
         font-size: 2rem;
+        margin: 20px;
     }
 
     .hero-text p {
         font-size: 1rem;
         display: none;
     }
+
+
+
 
     .scroll-down-arrow {
         display: none;
@@ -474,6 +497,8 @@ footer {
         cursor: pointer;
         /* Add cursor pointer */
     }
+
+
 
 
 
