@@ -111,7 +111,6 @@ function handleClick() {
 button.addEventListener("click", handleClick);
 
 
-document.getElementById("toggleNav").addEventListener("click", handleCollapse)
 
 function toggleDropdown() {
     var dropdown = document.getElementsByClassName("dropdown-content")[0];

@@ -1,13 +1,7 @@
-#aboutUsTitle {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 3500%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 100px;
-    color: antiquewhite;
+body {
+    min-height: 100vh;
 }
+
 
 #aboutUsText {
     position: absolute;
@@ -29,16 +23,29 @@
     font-size: 10px;
 }
 
+.hero {
+    height: fit-content;
+
+}
+
+
 @media screen and (max-width:768px) {
     #aboutUsTitle {
         font-size: 36px;
         top: 60%;
     }
 
+    .hero {
+        height: fit-content;
+
+    }
+
     #aboutUsText {
         font-size: 18px;
         line-height: 20px;
-        padding: 20px;
+        padding: 10px;
+        top: 2%;
+
     }
 
     #langs {
@@ -57,11 +64,17 @@
         font-size: 10px;
     }
 
+    #myDropdown {
+        width: 100%;
+    }
+
     #contact,
     #partnership,
     #socialMedia {
         padding: 20px;
     }
+
+
 }
 
 .bar {
